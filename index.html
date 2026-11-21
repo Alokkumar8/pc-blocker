@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self';"
+    />
+    <title>PC Blocker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="terminal-screen" aria-live="polite">
+      <header id="terminal-header">
+        <div class="header-meta">
+          <span class="cli-badge" id="header-title">pc-blocker v1.0.0</span>
+          <span class="cli-dot">&bull;</span>
+          <span id="header-date" class="header-date">DATE: LOADING...</span>
+          <span class="cli-dot">&bull;</span>
+          <span id="header-status" class="header-date">DAILY LOCK CYCLE: 06:00 AM</span>
+        </div>
+        <div class="header-instruction" id="instruction-line">
+          Welcome to PC Blocker — Workstation locked awaiting daily task commitment. You can add new tasks whenever you want from this terminal prompt at any time during the day.
+        </div>
+        <div class="header-commands-notice" id="commands-line">
+          [i] Press [Enter] to submit each task, [Ctrl+V] to paste, type 'done' when finished, type 'exit' to close, or press [Ctrl+Shift+W] to fully quit.
+        </div>
+      </header>
+
+      <section id="terminal-history"></section>
+
+      <div id="active-line" class="terminal-line active-prompt-line">
+        <div class="prompt-question-row">
+          <span id="prompt-icon" class="prompt-icon">?</span>
+          <span id="prompt-label" class="prompt-label">Enter your first important task for today:</span>
+        </div>
+        <div class="prompt-input-row">
+          <span id="prompt-chevron" class="prompt-chevron">&#8250;</span>
+          <span class="prompt-input-text-wrap"><span id="typed-input" class="typed-input"></span><span id="block-cursor" class="block-cursor" aria-hidden="true">&#9608;</span><span id="typed-input-after" class="typed-input"></span></span>
+        </div>
+      </div>
+    </main>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

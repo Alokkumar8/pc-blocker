@@ -1,1 +1,10 @@
 /node_modules
+/dist
+/out
+/.ocr-bin
+/.tmp
+/.tmp-ocr.cs
+.env
+
+
+

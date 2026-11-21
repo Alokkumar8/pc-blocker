@@ -1,4 +1,17 @@
 {
+  "name": "pc-blocker",
+  "version": "1.0.0",
+  "description": "Lightweight Windows desktop utility that enforces daily task commitment via a fullscreen CLI wizard and runs silently in the System Tray",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node test-runner.js"
+  },
+  "author": "Alok",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.0.0"
+  },
   "devDependencies": {
     "electron": "^41.7.1"
   }
